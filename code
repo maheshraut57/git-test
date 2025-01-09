@@ -1,0 +1,86 @@
+vboxuser@Xubuntu:~$ mkdir repos
+mkdir: cannot create directory ‘repos’: File exists
+vboxuser@Xubuntu:~$ cd repos/
+vboxuser@Xubuntu:~/repos$ git clone git@github.com:git@github.com:maheshraut57/git-test.git
+fatal: destination path 'git-test' already exists and is not an empty directory.
+vboxuser@Xubuntu:~/repos$ git remote -v
+fatal: not a git repository (or any of the parent directories): .git
+vboxuser@Xubuntu:~/repos$ touch hello_world.txt
+vboxuser@Xubuntu:~/repos$ git status
+fatal: not a git repository (or any of the parent directories): .git
+vboxuser@Xubuntu:~/repos$ hello_world.txt
+hello_world.txt: command not found
+vboxuser@Xubuntu:~/repos$ cd git-test
+vboxuser@Xubuntu:~/repos/git-test$ git remote -v
+origin	git@github.com:maheshraut57/git-test.git (fetch)
+origin	git@github.com:maheshraut57/git-test.git (push)
+vboxuser@Xubuntu:~/repos/git-test$ touch hello_world.txt
+vboxuser@Xubuntu:~/repos/git-test$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	hello_world.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+vboxuser@Xubuntu:~/repos/git-test$ git add hello_world.txt
+vboxuser@Xubuntu:~/repos/git-test$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   hello_world.txt
+
+vboxuser@Xubuntu:~/repos/git-test$ git commit .m "Add helllo_world.txt"
+error: pathspec '.m' did not match any file(s) known to git
+error: pathspec 'Add helllo_world.txt' did not match any file(s) known to git
+vboxuser@Xubuntu:~/repos/git-test$ git commit -m "Add hello_world.txt"
+[main f85f645] Add hello_world.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+vboxuser@Xubuntu:~/repos/git-test$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+vboxuser@Xubuntu:~/repos/git-test$ git log
+commit f85f645915397d1a7ae7a4aa1da87c56e0af1ce0 (HEAD -> main)
+Author: maheshraut57 <mahixd2005@gmail.com>
+Date:   Thu Jan 9 22:08:33 2025 +0530
+
+    Add hello_world.txt
+
+commit 160f828e992ae7527203b5a43690da75e8d2290b (origin/main, origin/HEAD)
+Author: maheshraut57 <mahixd005@gmail.com>
+Date:   Tue Jan 7 22:23:05 2025 +0530
+
+    Initial commit
+vboxuser@Xubuntu:~/repos/git-test$ code.
+Command 'code.' not found, did you mean:
+  command 'code' from snap code (fabdb6a3)
+  command 'coder' from snap coder (2.18.2)
+See 'snap info <snapname>' for additional versions.
+vboxuser@Xubuntu:~/repos/git-test$ 'code'
+Command 'code' not found, but can be installed with:
+sudo snap install code
+vboxuser@Xubuntu:~/repos/git-test$ cd Dowloads/
+bash: cd: Dowloads/: No such file or directory
+vboxuser@Xubuntu:~/repos/git-test$ sudo snap install code
+[sudo] password for vboxuser: 
+error: This revision of snap "code" was published using classic confinement and
+       thus may perform arbitrary system changes outside of the security
+       sandbox that snaps are usually confined to, which may put your system at
+       risk.
+
+       If you understand and want to proceed repeat the command including
+       --classic.
+vboxuser@Xubuntu:~/repos/git-test$ --classic.
+--classic.: command not found
+vboxuser@Xubuntu:~/repos/git-test$ --classic.sudo snap install code
+--classic.sudo: command not found
+vboxuser@Xubuntu:~/repos/git-test$ --classic
+--classic: command not found
+vboxuser@Xubuntu:~/repos/git-test$ 
