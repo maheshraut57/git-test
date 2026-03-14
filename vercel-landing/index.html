@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables — Excel to Business Visualizations</title>
+    <meta name="description" content="Upload Excel files and generate business visualizations with Tables." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="hero">
+        <p class="badge">Vercel Frontend</p>
+        <h1>Tables</h1>
+        <p class="subtitle">
+          Turn Excel sheets into charts in minutes. Upload your business data and get quick visual insights.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://YOUR-STREAMLIT-URL.streamlit.app" target="_blank" rel="noreferrer">Open Live App</a>
+          <a class="btn btn-secondary" href="../tables/README.md">Setup Guide</a>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h2>1) Upload Excel</h2>
+          <p>Supports .xlsx/.xls. Choose the correct sheet and preview rows before charting.</p>
+        </article>
+        <article class="card">
+          <h2>2) Build Charts</h2>
+          <p>Create bar, line, scatter, and histogram visualizations from numeric columns.</p>
+        </article>
+        <article class="card">
+          <h2>3) Export Clean Data</h2>
+          <p>Download cleaned CSV data used in your chart for reporting and sharing.</p>
+        </article>
+      </section>
+
+      <section class="note">
+        <h3>Before deploying this frontend</h3>
+        <ol>
+          <li>Deploy Streamlit app from <code>tables/app.py</code> to Render/Railway/Streamlit Cloud.</li>
+          <li>Replace <code>YOUR-STREAMLIT-URL.streamlit.app</code> in <code>index.html</code>.</li>
+          <li>Deploy this <code>vercel-landing</code> folder to Vercel as a static site.</li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>
